@@ -1,1 +1,1 @@
-# ethan-portfolio-starter
+# wendell-portfolio-starter

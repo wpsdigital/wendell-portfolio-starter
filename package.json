@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@next/font": "^13.4.4",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
+    "nodemailer": "^6.9.4",
     "react": "18.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
@@ -23,21 +25,11 @@
   },
   "devDependencies": {
     "@types/node": "^20.5.0",
-    "@typer/react": "18.2.20",
+    "@types/react": "18.2.20",
     "autoprefixer": "^10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
-  }
-  {
-    "extends": "next",
-    "rules": {
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-page-custom-font": "off"
-    }
-  }
-  {
-    "extends": "next/core-web-vitals"
   }
 }

@@ -1,17 +1,11 @@
-import React, { useState } from 'react'
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
-import CountUp from 'react-countup';
+/* eslint-disable react/jsx-key */
+import React, { useState } from 'react';
 
 // icons
 import {
   FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
   FaCss3Alt,
   FaPython,
@@ -20,8 +14,6 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
   SiCsharp,
@@ -113,12 +105,12 @@ const aboutData = [
 ];
 
 // components
-import Avatar from '../../components/Avatar'
-import Circles from '../../components/Circles'
+import Avatar from '../../components/Avatar';
+import Circles from '../../components/Circles';
 
 // framer motion
-import {motion} from 'framer-motion'
-import {fadeIn} from '../../variants'
+import { motion } from 'framer-motion';
+import {fadeIn} from '../../variants';
 
 // counter
 import CountUp from 'react-countup';
@@ -126,7 +118,8 @@ import CountUp from 'react-countup';
 const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
-  return <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+  return  (
+    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
     <Circles />
     {/* avatar image */}
     <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='hidden xl:flex absolute bottom-0 -left-[370px]'>
@@ -179,18 +172,19 @@ const About = () => {
               <div className='flex gap-x-4'>
                 {/* icons */}
               {item.icons?.map((icon, itemIndex) => {
-                return <div className='text-2xl text-white'>{icon}</div>;
+                return (
+                  <div className='text-2xl text-white'>{icon}</div>
+                );
               })}
-
-              </div>
-              
+              </div>              
             </div>
-            )
+            );
           })}
         </div>
       </motion.div>
     </div>
-  </div>;
+  </div>
+  );
 };
 
 export default About;

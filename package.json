@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.4.4",
+    "debug": "^4.3.1",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
@@ -21,7 +22,8 @@
     "react-tsparticles": "^2.9.3",
     "swiper": "^9.4.0",
     "tailwind-scrollbar": "^3.0.4",
-    "tsparticles": "^2.9.3"
+    "tsparticles": "^2.9.3",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.5.0",

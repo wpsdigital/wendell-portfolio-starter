@@ -1,5 +1,9 @@
-/* eslint-disable react/jsx-key */
 import React, { useState } from 'react'
+import Avatar from '../../components/Avatar';
+import Circles from '../../components/Circles';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
+import CountUp from 'react-countup';
 
 // icons
 import {
